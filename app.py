@@ -325,6 +325,8 @@ def way(df_eeg, df_rt, task):
                         name='VTC'))
     fig_vtc.add_trace(go.Scatter(x=[0.25], y=[ori_med+0.05],text=["Mediana"],mode="text", showlegend=False))
     fig_vtc.add_shape(legendrank=1, showlegend=False, type="line", xref="paper", line=dict(dash="5px"), x0=0, x1=4,y0=ori_med, y1=ori_med)
+    fig_vtc.add_shape(legendrank=1, showlegend=False, type="line", yref="paper", line=dict(dash="5px"), x0=2, x1=2,y0=0, y1=1.5)
+    fig_vtc.add_shape(legendrank=1, showlegend=False, type="line", yref="paper", line=dict(dash="5px"), x0=3, x1=3,y0=0, y1=1.5)
     fig_vtc.update_xaxes(title_text = "Time(min.)")
     fig_vtc.update_yaxes(title_text = "VTC")
     fig_vtc.update_layout(title='VTC', legend=dict(
